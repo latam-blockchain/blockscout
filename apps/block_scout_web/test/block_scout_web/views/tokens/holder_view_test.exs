@@ -41,8 +41,15 @@ defmodule BlockScoutWeb.Tokens.HolderViewTest do
       assert HolderView.total_supply_percentage(value, total_supply) == "0.0005%"
     end
 
-    test "zero total_supply" do
+    test "0_zero total_supply" do
       %Token{total_supply: total_supply} = build(:token, total_supply: 0)
+      %TokenBalance{value: value} = build(:token_balance, value: 0)
+
+      assert HolderView.total_supply_percentage(value, total_supply) == "N/A%"
+    end
+
+    test "1_zero total_supply" do
+      %Token{total_supply: total_supply} = build(:token, total_supply: Decimal.new(0))
       %TokenBalance{value: value} = build(:token_balance, value: 0)
 
       assert HolderView.total_supply_percentage(value, total_supply) == "N/A%"
