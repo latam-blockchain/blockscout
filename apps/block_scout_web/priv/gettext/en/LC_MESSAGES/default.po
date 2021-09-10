@@ -954,7 +954,7 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:37
 #: lib/block_scout_web/views/wei_helpers.ex:78
 msgid "Ether"
-msgstr ""
+msgstr "USD"
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:211
@@ -1308,13 +1308,13 @@ msgstr ""
 #: lib/block_scout_web/templates/block/overview.html.eex:125
 #: lib/block_scout_web/templates/chain/_block.html.eex:15
 msgid "Miner"
-msgstr ""
+msgstr "Validator"
 
 #, elixir-format
 #: lib/block_scout_web/views/block_view.ex:60
 #: lib/block_scout_web/views/block_view.ex:65
 msgid "Miner Reward"
-msgstr ""
+msgstr "Validator Reward"
 
 #, elixir-format
 #:
